@@ -1,0 +1,178 @@
+/* ИСХОДНЫЙ MiniShop. Здесь пока нет решений проверочной работы № 2. */
+:root {
+  --primary: #4c3cba;
+  --primary-dark: #362a83;
+  --text: #0a0623;
+  --muted: #49465c;
+  --surface: #f7f7fa;
+  --background: #ccc9e4;
+  --border: #9187d4;
+  --radius: 16px;
+  --gap: 20px;
+  --shadow: 0 8px 24px rgb(30 41 59 / 8%)
+}
+
+.button {
+  color: #e8e3e3;
+  background-color: #3b1cec;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.mini {
+  display: flex;
+  max-width: 1300px;
+  background-color: #f493cc;
+  margin: auto;
+  height: 300px;
+  border-radius: var(--radius);
+
+}
+
+.left {
+  width: 55%;
+  border-radius: var(--radius);
+  padding: 30px;
+}
+
+.right {
+  width: 35%;
+  font-size: 60px;
+  background-color: rgb(153, 143, 244);
+  margin: auto;
+  border-radius: var(--radius);
+  transform: rotate(5deg);
+  line-height: 0.3;
+}
+
+.right p {
+font-weight:700;
+text-align: center;
+}
+
+.about {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #263244;
+  background-color: rgb(211, 209, 226);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header {
+  background-color: white;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 a20px;
+  display: uto;
+  padding: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  font-size: 28px;
+}
+
+.logo span {
+  color: #2563eb;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.catalog,
+.about {
+  max-width: 1100px;
+  margin: 32px auto;
+  padding: 0 20px;
+}
+
+.catalog h2 {
+  margin: 0 0 20px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 3px solid #ee87c6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 42%;
+  flex-shrink: 0;
+  min-height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #edf3ff;
+  font-size: 66px;
+}
+
+.card-info {
+  padding: 15px;
+  min-width: 0;
+}
+
+.card h3 {
+  margin: 0 0 12px;
+  font-size: 16px;
+}
+
+.price {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.card button {
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #1d4ed8;
+}
+
+.about {
+  padding-top: 10px;
+}
+
+footer {
+  padding: 22px;
+  text-align: center;
+  background-color: #e9edf4;
+}
+
+/* ЗАДАНИЯ НА ПРОВЕРОЧНОЙ:
+   1. Добавить боковые панели и переработать раскладку (Flexbox/Grid).
+   2. Добавить эффекты transform, transition, :active и @keyframes.
+   3. Добавить медиазапросы и мобильное меню.
+   4. Вынести цвета и размеры в CSS-переменные :root и var().
+*/
